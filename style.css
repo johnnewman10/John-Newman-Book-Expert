@@ -36,8 +36,10 @@ header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 8
 .stats b{display:block;font:800 2.4rem Manrope;color:var(--teal)}.stats span{font-size:.85rem;color:var(--muted)}
 .two{display:grid;grid-template-columns:1fr 1.4fr;gap:3.5rem;align-items:center}
 .portrait{aspect-ratio:4/5;width:100%;border-radius:1.5rem;object-fit:cover;display:block}
-.ph{position:relative;display:flex;align-items:flex-end;padding:2rem;overflow:hidden;border:1px solid var(--line);background:linear-gradient(135deg,color-mix(in srgb,var(--teal) 25%,transparent),var(--card) 55%,color-mix(in srgb,var(--mist) 30%,transparent))}
-.ph i{position:absolute;right:1rem;top:0;font:800 9rem Manrope;font-style:normal;color:color-mix(in srgb,var(--teal) 16%,transparent)}.ph p{font:700 1.4rem Manrope;line-height:1.3}
+.ph{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:24rem;padding:1.4rem 1.4rem 1.6rem;overflow:hidden;border:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,#071b2b 0%,#0d243a 100%);border-radius:1.5rem;box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 18px 36px -26px rgba(7,27,43,.7)}
+.mini-tag{position:absolute;top:1.1rem;right:1.1rem;display:inline-flex;align-items:center;justify-content:center;padding:.4rem .8rem;border-radius:999px;background:rgba(130,170,170,.18);border:1px solid rgba(130,170,170,.42);color:#9feae5;font:600 .72rem Inter;letter-spacing:.02em}
+.ph i{position:relative;display:block;right:auto;top:auto;margin-top:auto;font:800 clamp(5.2rem,8vw,10rem) Manrope;font-style:normal;line-height:.8;letter-spacing:-.08em;color:rgba(255,255,255,.72)}
+.ph p{position:relative;z-index:1;margin-top:.7rem;max-width:11ch;font:700 clamp(1.8rem,2vw,2.6rem) Manrope;line-height:1.08;letter-spacing:-.04em;color:#f2efe9}
 .pagehead{border-bottom:1px solid var(--line);background:linear-gradient(to bottom,color-mix(in srgb,var(--teal) 10%,transparent),transparent);padding:5rem 0}.pagehead p{margin-top:1.2rem;max-width:40rem;font-size:1.1rem}
 .sh{margin-bottom:3rem;max-width:40rem}.sh p{margin-top:1rem;font-size:1.1rem}
 .faq{border:1px solid var(--line);border-radius:1rem;background:var(--card)}.faq details{padding:1.2rem 1.4rem;border-top:1px solid var(--line)}.faq details:first-child{border-top:0}
